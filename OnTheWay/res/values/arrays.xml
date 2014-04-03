@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <string-array name="lines_stops" >
+         <!-- <item>班车号-班车车站</item> --> 
+        <item>1号班车-望京西</item>
+        <item>3号班车-四惠东</item>
+        <item>4号班车-三元桥</item>
+        <item>5号班车-立汤路</item>
+        <item>6号班车-回龙观</item>
+        <item>8号班车-八达岭</item>
+        <item>10号班车-林萃路</item>        
+    </string-array> 
+                
+</resources>

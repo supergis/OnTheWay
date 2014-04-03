@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner" >
+
+        <TextView
+            android:id ="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" 
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_style" />
+
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/set_button_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout" >
+
+        <com.supermap.android.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+         <Button
+                    android:id="@+id/button_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp" 
+                    android:background="@drawable/overview_button_style"/>
+         <ImageView          
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:background="@drawable/logo_supermap"  />
+    </RelativeLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/popuprl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/balloon_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_x="-1000px"
+            android:layout_y="-1000px"     
+            android:background="@drawable/balloon_overlay_unfocused"
+            android:orientation="vertical" >
+
+            <AbsoluteLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+              
+                <TextView
+                    android:id="@+id/balloon_item_title"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="9dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"/>
+
+                <ImageView
+                    android:id="@+id/map_bubbleImageOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="160dp"
+                    android:background="@drawable/close_button_style" />
+            </AbsoluteLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/balloon_item_snippet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:textSize="12dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </AbsoluteLayout>
+
+</RelativeLayout>

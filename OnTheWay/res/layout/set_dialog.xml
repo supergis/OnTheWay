@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+   <LinearLayout           
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+        
+     <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"  
+            android:layout_marginLeft="9dp"         
+            android:text="@string/set_username"
+            android:gravity="center_vertical"
+            android:textColor="#838383"
+            android:textSize="20dp" />
+     <EditText
+            android:id="@+id/EditText03"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/shape"  
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:textSize="20dp" >         
+        </EditText>
+       </LinearLayout>
+       
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#dddddd" />
+       
+       <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"  
+            android:layout_marginLeft="9dp"        
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/confirm_button_style"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center" />
+
+</LinearLayout>

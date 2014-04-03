@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+     <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"  
+            android:layout_marginLeft="9dp"         
+            android:text="@string/confirm_quit"
+            android:gravity="center"
+            android:textColor="#3a3a3a"
+            android:textSize="20dp" />
+       <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#dddddd" />
+     
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="horizontal">  
+  
+    <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="140dp"
+            android:layout_height="50dp"  
+            android:background="@drawable/alertquit_button_style"
+            android:text="@string/cancel"
+            android:textColor="#2e96e1"
+            android:textSize="20dp"
+            android:gravity="center" />
+    <View
+        android:layout_width="1px"
+        android:layout_height="50dp"
+        android:background="#dddddd" />
+    
+    <Button
+            android:id="@+id/button_confirmQuitShare"
+            android:layout_width="140dp"
+            android:layout_height="50dp"  
+            android:background="@drawable/alertquit_button_style"
+            android:text="@string/confirm"
+            android:textColor="#2e96e1"
+            android:textSize="20dp"
+            android:gravity="center" />
+     
+    </LinearLayout>
+
+</LinearLayout>
