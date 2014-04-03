@@ -5,7 +5,7 @@ OnTheWay 是基于SuperMap iClient for Android 开发的一款位置共享App，
 
 
 用途：
-解决员工上下班车等待
+1、解决员工上下班车等待
 2、可用的UI框架，二次开发者可根据需求搭建自己的app应用。
 
 二、使用说明
